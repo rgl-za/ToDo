@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.todo.mapper.ToDoMapper">
+
+    <sql id="todoColumns">
+        idx, item, status
+    </sql>
+
+    <select id="selectToDoList" parameterType="ToDoDTO" resultType="ToDoDTO">
+        SELECT <include refid="todoColumns" />
+        FROM todo
+        order by idx desc
+    </select>
+
+    <select id="selectToDoListCount" resultType="int">
+        SELECT COUNT(*)
+        FROM todo
+        where status = 'N'
+    </select>
+</mapper>
