@@ -3,7 +3,7 @@ drop table todo;
 CREATE TABLE todo(
  idx    number not null,
  item 		  varchar(100) 		 NOT NULL,
- status 		varchar(1) default 'n'
+ status 		varchar(1) default 'N'
 
 );
 

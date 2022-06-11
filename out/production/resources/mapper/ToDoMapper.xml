@@ -6,15 +6,27 @@
         idx, item, status
     </sql>
 
-    <select id="selectToDoList" parameterType="ToDoDTO" resultType="ToDoDTO">
+    <select id="selectToDoList" resultType="ToDoDTO">
         SELECT <include refid="todoColumns" />
         FROM todo
         order by idx desc
     </select>
 
-    <select id="selectToDoListCount" resultType="int">
-        SELECT COUNT(*)
-        FROM todo
-        where status = 'N'
-    </select>
+    <insert id="insertToDoList" parameterType="ToDoDTO">
+        INSERT INTO todo (
+            <include refid="todoColumns"/>
+        ) VALUES (
+            seq_idx_no.nextval
+            , #{item}
+            , 'N'
+        )
+    </insert>
+
+    <update id="updateToDoList" parameterType="ToDoDTO">
+        UPDATE todo
+        SET
+            status = 'Y'
+        WHERE idx = #{idx}
+    </update>
+
 </mapper>

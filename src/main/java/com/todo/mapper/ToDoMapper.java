@@ -9,4 +9,6 @@ import com.todo.domain.ToDoDTO;
 @Mapper
 public interface ToDoMapper {
     public List<ToDoDTO> selectToDoList();
+    public int insertToDoList(ToDoDTO params);
+    public int updateToDoList(ToDoDTO params);
 }

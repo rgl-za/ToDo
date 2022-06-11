@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ToDoService {
     public List<ToDoDTO> getToDoList();
+    public boolean insertToDoList(ToDoDTO params);
+    public boolean updateToDoList(ToDoDTO params);
 }

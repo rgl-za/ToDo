@@ -10,32 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c4e7d3-d7f3-4ce2-b152-3858fa6c4eee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/todo/domain/ToDoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/todo/domain/ToDoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/todo/mapper/ToDoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ToDoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todo/configuration/DBConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/todo/TodoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/TodoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/todo/todo/TodoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todo/TodoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/TodoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/TodoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/domain/ToDoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/mapper/ToDoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/mapper/ToDoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/service/ToDoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/service/ToDoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/service/ToDoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/service/ToDoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/mapper/ToDoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mapper/ToDoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/TodoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/TodoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/domain/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/controller/ToDoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/mapper/ToDoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/mapper/ToDoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ToDoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ToDoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/todo.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +155,7 @@
     </configuration>
     <configuration name="TodoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="todo.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.todo.todo.TodoApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.todo.TodoApplication" />
       <option name="DEBUG_MODE" value="true" />
       <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -394,7 +387,10 @@
       <workItem from="1654496752005" duration="575000" />
       <workItem from="1654497610934" duration="1608000" />
       <workItem from="1654499415484" duration="5021000" />
-      <workItem from="1654522785384" duration="7415000" />
+      <workItem from="1654522785384" duration="7962000" />
+      <workItem from="1654664535261" duration="13991000" />
+      <workItem from="1654735536986" duration="10103000" />
+      <workItem from="1654882329577" duration="598000" />
     </task>
     <servers />
   </component>

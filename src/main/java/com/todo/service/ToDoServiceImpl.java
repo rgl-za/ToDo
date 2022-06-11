@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import com.todo.domain.ToDoDTO;
 import com.todo.mapper.ToDoMapper;
 
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -17,7 +16,25 @@ public class ToDoServiceImpl implements ToDoService{
 
     @Override
     public List<ToDoDTO> getToDoList() {
-        List<ToDoDTO> todoList = Collections.emptyList();
+        List<ToDoDTO> todoList = toDoMapper.selectToDoList();
         return todoList;
+    }
+
+    @Override
+    public boolean insertToDoList(ToDoDTO params){
+        int queryResult = 0;
+
+        if(params != null)
+           queryResult = toDoMapper.insertToDoList(params);
+
+        return (queryResult == 1) ? true : false;
+    }
+
+    @Override
+    public boolean updateToDoList(ToDoDTO params){
+        int queryResult = 0;
+        if(params != null)
+            queryResult = toDoMapper.updateToDoList(params);
+        return (queryResult == 1) ? true : false;
     }
 }
