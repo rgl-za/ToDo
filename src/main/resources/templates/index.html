@@ -18,6 +18,9 @@
         .complete {
             text-decoration: line-through;
         }
+
+
+
     </style>
 </head>
 <body>
@@ -27,15 +30,15 @@
         ng-controller="myController"
 >
     <h3>Todo App</h3>
-    <div class="d-flex align-items-center mb-3">
-        <form class="form-group mr-3 mb-0" th:action="@{/todo/register.do}" th:object="${todo}" method="post">
-            <input th:field="*{item}" type="text" class="form-control" placeholder="What will you do today?"/>
-            <button type="submit" class="btn btn-primary mr-3">Save</button>
+    <div class="d-flex align-items-center mb-3" style="display: inline-block;">
+        <form class="form-group mr-3 mb-0" style="display: inline-block;" th:action="@{/todo/register.do}" th:object="${todo}" method="post">
+            <div style="display: inline-block">
+                <input th:field="*{item}" type="text" class="form-control" style="vertical-align:middle" placeholder="할 일을 적어주세요"/>
+            </div>
+            <div style="display: inline-block">
+                <button type="submit" class="btn btn-primary mr-3">Save</button>
+            </div>
         </form>
-
-<!--        <button type="button" class="btn btn-warning" ng-click="getTask()">-->
-<!--            Get Tasks-->
-<!--        </button>-->
     </div>
 
     <div class="table-wrapper" th:object="${todo}" method="post">
@@ -50,8 +53,8 @@
             </thead>
             <tbody>
             <tr th:if="${not #lists.isEmpty(toDoList)}" th:each="todo,index : ${toDoList}">
-                <td th:text="${index.index}"></td> <!-- no-->
-                <td th:text="${todo.item}"></td> <!--item-->
+                <td th:text="${index.index}" th:style="${todo.status == 'Y' ? 'text-decoration: line-through;': 'text-decoration: none;'}"></td> <!-- no-->
+                <td th:text="${todo.item}" th:style="${todo.status == 'Y' ? 'text-decoration: line-through;': 'text-decoration: none;'}"></td> <!--item-->
                 <td th:text="${todo.status}"></td> <!-- status-->
                 <td>
                     <button type="button" class="btn btn-danger" th:onclick="deleteToDoList([[  ${todo.idx}]], [[${index.index} ]])">Delete</button>

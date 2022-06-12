@@ -11,15 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9c4e7d3-d7f3-4ce2-b152-3858fa6c4eee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/controller/ToDoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/controller/ToDoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/mapper/ToDoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/mapper/ToDoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/todo/service/ToDoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/todo/service/ToDoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/controller/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/controller/ToDoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/mapper/ToDoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/mapper/ToDoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todo/service/ToDoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ToDoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ToDoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +379,7 @@
       <workItem from="1654945948368" duration="4578000" />
       <workItem from="1654950995259" duration="3796000" />
       <workItem from="1654956431639" duration="23000" />
-      <workItem from="1655012929650" duration="3040000" />
+      <workItem from="1655012929650" duration="5838000" />
     </task>
     <servers />
   </component>
