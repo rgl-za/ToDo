@@ -29,4 +29,9 @@
         WHERE idx = #{idx}
     </update>
 
+    <delete id="deleteToDoList" parameterType="long">
+        DELETE todo
+        where idx = #{idx}
+    </delete>
+
 </mapper>

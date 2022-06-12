@@ -23,10 +23,8 @@ public class ToDoServiceImpl implements ToDoService{
     @Override
     public boolean insertToDoList(ToDoDTO params){
         int queryResult = 0;
-
         if(params != null)
            queryResult = toDoMapper.insertToDoList(params);
-
         return (queryResult == 1) ? true : false;
     }
 
@@ -35,6 +33,14 @@ public class ToDoServiceImpl implements ToDoService{
         int queryResult = 0;
         if(params != null)
             queryResult = toDoMapper.updateToDoList(params);
+        return (queryResult == 1) ? true : false;
+    }
+
+    @Override
+    public boolean deleteToDoList(Long idx){
+        int queryResult = 0;
+        if(idx != null)
+            queryResult = toDoMapper.deleteToDoList(idx);
         return (queryResult == 1) ? true : false;
     }
 }

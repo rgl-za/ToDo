@@ -38,7 +38,7 @@
 <!--        </button>-->
     </div>
 
-    <div class="table-wrapper">
+    <div class="table-wrapper" th:object="${todo}" method="post">
         <table class="table table-hover table-bordered">
             <thead>
             <tr>
@@ -49,52 +49,54 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:if="${not #lists.isEmpty(toDoList)}" th:each="todo : ${toDoList}">
-                <td th:text="${todo.idx}"></td> <!-- no-->
+            <tr th:if="${not #lists.isEmpty(toDoList)}" th:each="todo,index : ${toDoList}">
+                <td th:text="${index.index}"></td> <!-- no-->
                 <td th:text="${todo.item}"></td> <!--item-->
                 <td th:text="${todo.status}"></td> <!-- status-->
                 <td>
-                    <button a th:href="@{/todo/delete.do}" class="btn btn-danger">Delete</a></button>
-<!--                    <button a th:href="@{/todo/update.do( idx=${board.idx} )}}" class="btn btn-success">Finished</a></button>-->
+                    <button type="button" class="btn btn-danger" th:onclick="deleteToDoList([[  ${todo.idx}]], [[${index.index} ]])">Delete</button>
+                    <button type="button" class="btn btn-success" th:onclick="updateToDoList([[ ${todo.idx}]], [[${index.index} ]])">Finished</button>
                 </td> <!-- action-->
             </tr>
             </tbody>
         </table>
     </div>
 </div>
-<script>
-    var app = angular.module("myApp", []);
-    app.controller("myController", function($scope) {
-        $scope.tasks = [];
-        // $scope.saved = localStorage.getItem("tasks");
-        // $scope.tasks =
-        //   localStorage.getItem("tasks") !== null
-        //     ? JSON.parse($scope.saved)
-        //     : [
-        //         { task_name: "Learn AngularJS", status: false },
-        //         { task_name: "Build an Angular app", status: false }
-        //       ];
-        // localStorage.setItem("tasks", JSON.stringify($scope.tasks));
-        $scope.saveTask = function() {
-            $scope.tasks.push({ task_name: $scope.yourTask, status: false });
-            //   localStorage.setItem("tasks", JSON.stringify($scope.tasks));
-        };
-        $scope.getTask = function() {
-            var oldTasks = $scope.tasks;
-            $scope.tasks = [];
-            angular.forEach(oldTasks, function(task) {
-                if (!task.done) $scope.tasks.push(task);
-            });
-            localStorage.setItem("tasks", JSON.stringify($scope.tasks));
-        };
-        $scope.delete = function(i) {
-            $scope.tasks.splice(i, 1);
-        };
-        $scope.finished = function(i) {
-            $scope.tasks[i].status = true;
-        };
-    });
-</script>
+
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+
+        function updateToDoList(idx, index) {
+            if (confirm(index + "번 할 일을 하셨나요?")) {
+                var uri = /*[[ @{/todo/update.do} ]]*/null;
+                var html = "";
+
+                html += '<form name="dataForm" action="'+uri+'" method="post">';
+                html += '<input type="hidden" name="idx" value="'+idx+'" />';
+                html += '</form>';
+
+                $("body").append(html);
+                document.dataForm.submit();
+            }
+        }
+
+        function deleteToDoList(idx, index) {
+            if (confirm(index + "번 할 일을 삭제할까요?")) {
+                var uri = /*[[ @{/todo/delete.do} ]]*/null;
+                var html = "";
+
+                html += '<form name="dataForm" action="'+uri+'" method="post">';
+                html += '<input type="hidden" name="idx" value="'+idx+'" />';
+                html += '</form>';
+
+                $("body").append(html);
+                document.dataForm.submit();
+            }
+        }
+
+        /*]]>*/
+    </script>
 <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
